@@ -1,20 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="mishi cosmetics — clean, playful, skin-loving makeup made for the main characters of the internet. Vegan, cruelty-free, and made to be shared." />
-    <meta name="theme-color" content="#fff7fa" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mishi cosmetics — Glow Loud. Stay You.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        body {
+            background-color: #fff0f3;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #d81b60;
+            letter-spacing: -1px;
+        }
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d81b60;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe3ec 100%);
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero h1 span {
+            color: #d81b60;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin-bottom: 35px;
+        }
+        .btn {
+            background-color: #d81b60;
+            color: white;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+        .btn:hover {
+            background-color: #ad1457;
+            transform: translateY(-2px);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 80px 8%;
+            background: #ffffff;
+        }
+        .card {
+            background: #fff9fb;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #fce4ec;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+            color: #d81b60;
+            font-size: 20px;
+        }
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a1a1a;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">mishi cosmetics</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Glow Loud. <span>Stay You.</span></h1>
+        <p>Discover clean, cruelty-free, and skin-loving beauty essentials crafted to enhance your everyday radiance naturally.</p>
+        <a href="#" class="btn">Explore Collection</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>100% Cruelty Free</h3>
+            <p>We love animals as much as you do. None of our products are ever tested on animals.</p>
+        </div>
+        <div class="card">
+            <h3>Skin-Friendly Formula</h3>
+            <p>Infused with natural ingredients and vitamins to nourish your skin from within.</p>
+        </div>
+        <div class="card">
+            <h3>Long Lasting Glow</h3>
+            <p>Designed for all-day wear so you stay confident and gorgeous from morning to night.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mishi Cosmetics. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
